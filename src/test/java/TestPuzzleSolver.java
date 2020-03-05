@@ -1,6 +1,3 @@
-/**
- * 
- */
 package test.java;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -11,38 +8,22 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import main.java.*;
+import main.java.PuzzleSolver;
 
-/**
- * @author jaredgorton
- *
- */
-class TestHorizSearcher {
+class TestPuzzleSolver {
 
-	/**
-	 * @throws java.lang.Exception
-	 */
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
 	}
 
-	/**
-	 * @throws java.lang.Exception
-	 */
 	@AfterAll
 	static void tearDownAfterClass() throws Exception {
 	}
 
-	/**
-	 * @throws java.lang.Exception
-	 */
 	@BeforeEach
 	void setUp() throws Exception {
 	}
 
-	/**
-	 * @throws java.lang.Exception
-	 */
 	@AfterEach
 	void tearDown() throws Exception {
 	}
@@ -50,21 +31,13 @@ class TestHorizSearcher {
 	@Test
 	void test() {
 //		fail("Not yet implemented");
-		assert(true);
+		PuzzleSolver ps = new PuzzleSolver();
+		assert(ps != null);
 	}
 	
 	@Test
-	void test2() {
-		Searcher searcher = new HorizSearcher();
-		Coord c = searcher.findWord(null);
-		assert(c == null);
-	}
-	
-	@Test
-	void test3() {
-		Searcher searcher = new HorizSearcher();
-		Coord c = searcher.findWord(null);
-		assertEquals(c, null);
+	void solve() {
+		assertEquals(1, 1);
 	}
 
 }

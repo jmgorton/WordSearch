@@ -1,4 +1,6 @@
-package main.java;
+package main.java.search;
+
+import main.java.Coord;
 
 public class HorizSearcher implements Searcher {
 
